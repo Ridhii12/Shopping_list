@@ -93,6 +93,10 @@ app.delete('/products/:id',async(req,res)=>{
     res.redirect('/products');
 })
 
+app.get('/', (req, res) => {
+    res.redirect('/products');
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () =>{
