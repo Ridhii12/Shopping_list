@@ -30,7 +30,7 @@ Before running this application, make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/Ridhii12/Shopping_list.git
    cd mongoose_express
    ```
 
@@ -124,15 +124,4 @@ The application uses the following default settings:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-Your Name - [Your GitHub Profile]
-
 ---
-
-⭐ If you find this project helpful, please give it a star! 
