@@ -29,12 +29,14 @@ Before running this application, make sure you have the following installed:
 ## 🛠️ Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Ridhii12/Shopping_list.git
    cd mongoose_express
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
@@ -43,6 +45,7 @@ Before running this application, make sure you have the following installed:
    Make sure MongoDB is running on your local machine (default port: 27017)
 
 4. **Run the application**
+
    ```bash
    node index.js
    ```
@@ -71,21 +74,25 @@ mongoose_express/
 ## 🎯 Usage
 
 ### Adding Products
+
 1. Click "Add New Product" button
 2. Fill in the product name, price, and select a category
 3. Click "Add Product" to save
 
 ### Viewing Products
+
 - View all products on the main page
 - Click on any product to see detailed information
 - Use category filtering to view specific product types
 
 ### Editing Products
+
 1. Click on a product to view its details
 2. Click "Edit Product" button
 3. Modify the information and click "Update Product"
 
 ### Deleting Products
+
 1. Navigate to the product detail page
 2. Click "Delete Product" button
 3. Confirm the deletion
@@ -102,6 +109,7 @@ mongoose_express/
 ## 🔧 Configuration
 
 The application uses the following default settings:
+
 - **Port**: 3000
 - **Database**: MongoDB on localhost:27017
 - **Database Name**: farmStand
@@ -124,4 +132,5 @@ The application uses the following default settings:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
 ---

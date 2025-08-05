@@ -5,13 +5,15 @@ const mongoose=require('mongoose');
 const Product=require('./models/product')
 const methodOverride=require('method-override')
 
+// MongoDB connection - works for both local and cloud deployment
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/farmStand';
 
-mongoose.connect('mongodb://localhost:27017/farmStand')//,{useNewParser:true})
+mongoose.connect(MONGODB_URI)
 .then(()=>{
-    console.log("connection open");
+    console.log("MongoDB connection successful");
 })
 .catch((err)=>{
-    console.log("error occured");
+    console.log("MongoDB connection error:");
     console.log(err);
 }); 
  
@@ -91,8 +93,10 @@ app.delete('/products/:id',async(req,res)=>{
     res.redirect('/products');
 })
 
-app.listen(3000, () =>{
-    console.log("App is listening on port 3000!");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () =>{
+    console.log(`App is listening on port ${PORT}!`);
 
 })
     
